@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'api_client.dart';
 import 'app.dart';
 
 void main() async {
@@ -7,8 +8,7 @@ void main() async {
       fileName: '${const String.fromEnvironment('DEPLOY_ENV')}.env');
   String apiURL = dotenv.env['API_URL'] ?? '';
   String pageTitle = dotenv.env['HOME_PAGE'] ?? '';
-  debugPrint('main(): apiURL = $apiURL');
-  debugPrint('main(): pageTitle = $pageTitle');
-  runApp(App(pageTitle: 'Characters Viewer'));
+  final apiClient = ApiClient(apiURL);
+  runApp(App(apiClient: apiClient, pageTitle: pageTitle));
 }
 
