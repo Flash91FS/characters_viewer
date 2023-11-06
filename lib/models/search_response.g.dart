@@ -25,7 +25,9 @@ _$_SearchResponse _$$_SearchResponseFromJson(Map<String, dynamic> json) =>
       imageWidth: json['ImageWidth'] as int?,
       infobox: json['Infobox'] as String?,
       redirect: json['Redirect'] as String?,
-      relatedTopics: json['RelatedTopics'] as List<dynamic>?,
+      relatedTopics: (json['RelatedTopics'] as List<dynamic>?)
+          ?.map((e) => RelatedTopics.fromJson(e as Map<String, dynamic>))
+          .toList(),
       results: json['Results'] as List<dynamic>?,
       type: json['Type'] as String?,
       meta: json['meta'] as Map<String, dynamic>?,

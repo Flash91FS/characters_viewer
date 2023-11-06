@@ -55,7 +55,7 @@ mixin _$SearchResponse {
   @JsonKey(name: 'Redirect')
   String? get redirect => throw _privateConstructorUsedError;
   @JsonKey(name: 'RelatedTopics')
-  List<dynamic>? get relatedTopics => throw _privateConstructorUsedError;
+  List<RelatedTopics>? get relatedTopics => throw _privateConstructorUsedError;
   @JsonKey(name: 'Results')
   List<dynamic>? get results => throw _privateConstructorUsedError;
   @JsonKey(name: 'Type')
@@ -93,7 +93,7 @@ abstract class $SearchResponseCopyWith<$Res> {
       @JsonKey(name: 'ImageWidth') int? imageWidth,
       @JsonKey(name: 'Infobox') String? infobox,
       @JsonKey(name: 'Redirect') String? redirect,
-      @JsonKey(name: 'RelatedTopics') List<dynamic>? relatedTopics,
+      @JsonKey(name: 'RelatedTopics') List<RelatedTopics>? relatedTopics,
       @JsonKey(name: 'Results') List<dynamic>? results,
       @JsonKey(name: 'Type') String? type,
       @JsonKey(name: 'meta') Map<dynamic, dynamic>? meta});
@@ -206,7 +206,7 @@ class _$SearchResponseCopyWithImpl<$Res, $Val extends SearchResponse>
       relatedTopics: freezed == relatedTopics
           ? _value.relatedTopics
           : relatedTopics // ignore: cast_nullable_to_non_nullable
-              as List<dynamic>?,
+              as List<RelatedTopics>?,
       results: freezed == results
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
@@ -249,7 +249,7 @@ abstract class _$$_SearchResponseCopyWith<$Res>
       @JsonKey(name: 'ImageWidth') int? imageWidth,
       @JsonKey(name: 'Infobox') String? infobox,
       @JsonKey(name: 'Redirect') String? redirect,
-      @JsonKey(name: 'RelatedTopics') List<dynamic>? relatedTopics,
+      @JsonKey(name: 'RelatedTopics') List<RelatedTopics>? relatedTopics,
       @JsonKey(name: 'Results') List<dynamic>? results,
       @JsonKey(name: 'Type') String? type,
       @JsonKey(name: 'meta') Map<dynamic, dynamic>? meta});
@@ -360,7 +360,7 @@ class __$$_SearchResponseCopyWithImpl<$Res>
       relatedTopics: freezed == relatedTopics
           ? _value._relatedTopics
           : relatedTopics // ignore: cast_nullable_to_non_nullable
-              as List<dynamic>?,
+              as List<RelatedTopics>?,
       results: freezed == results
           ? _value._results
           : results // ignore: cast_nullable_to_non_nullable
@@ -400,7 +400,7 @@ class _$_SearchResponse
       @JsonKey(name: 'ImageWidth') this.imageWidth,
       @JsonKey(name: 'Infobox') this.infobox,
       @JsonKey(name: 'Redirect') this.redirect,
-      @JsonKey(name: 'RelatedTopics') final List<dynamic>? relatedTopics,
+      @JsonKey(name: 'RelatedTopics') final List<RelatedTopics>? relatedTopics,
       @JsonKey(name: 'Results') final List<dynamic>? results,
       @JsonKey(name: 'Type') this.type,
       @JsonKey(name: 'meta') final Map<dynamic, dynamic>? meta})
@@ -462,10 +462,10 @@ class _$_SearchResponse
   @override
   @JsonKey(name: 'Redirect')
   final String? redirect;
-  final List<dynamic>? _relatedTopics;
+  final List<RelatedTopics>? _relatedTopics;
   @override
   @JsonKey(name: 'RelatedTopics')
-  List<dynamic>? get relatedTopics {
+  List<RelatedTopics>? get relatedTopics {
     final value = _relatedTopics;
     if (value == null) return null;
     if (_relatedTopics is EqualUnmodifiableListView) return _relatedTopics;
@@ -632,7 +632,7 @@ abstract class _SearchResponse implements SearchResponse {
       @JsonKey(name: 'ImageWidth') final int? imageWidth,
       @JsonKey(name: 'Infobox') final String? infobox,
       @JsonKey(name: 'Redirect') final String? redirect,
-      @JsonKey(name: 'RelatedTopics') final List<dynamic>? relatedTopics,
+      @JsonKey(name: 'RelatedTopics') final List<RelatedTopics>? relatedTopics,
       @JsonKey(name: 'Results') final List<dynamic>? results,
       @JsonKey(name: 'Type') final String? type,
       @JsonKey(name: 'meta')
@@ -694,7 +694,7 @@ abstract class _SearchResponse implements SearchResponse {
   String? get redirect;
   @override
   @JsonKey(name: 'RelatedTopics')
-  List<dynamic>? get relatedTopics;
+  List<RelatedTopics>? get relatedTopics;
   @override
   @JsonKey(name: 'Results')
   List<dynamic>? get results;

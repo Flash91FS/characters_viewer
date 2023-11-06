@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'related_topics.dart';
 
 part 'search_response.freezed.dart';
 
@@ -26,7 +27,7 @@ class SearchResponse with _$SearchResponse {
     @JsonKey(name: 'ImageWidth') int? imageWidth,
     @JsonKey(name: 'Infobox') String? infobox,
     @JsonKey(name: 'Redirect') String? redirect,
-    @JsonKey(name: 'RelatedTopics') List? relatedTopics,
+    @JsonKey(name: 'RelatedTopics') List<RelatedTopics>? relatedTopics,
     @JsonKey(name: 'Results') List? results,
     @JsonKey(name: 'Type') String? type,
     @JsonKey(name: 'meta') Map? meta,
