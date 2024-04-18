@@ -1,5 +1,5 @@
 import 'package:characters_viewer/api_client.dart';
-import 'package:characters_viewer/repository/i_search_results_repository.dart';
+import 'package:characters_viewer/repository/i_search_repository.dart';
 import 'package:characters_viewer/models/request_failure.dart';
 import 'package:characters_viewer/models/result.dart';
 import 'package:characters_viewer/models/related_topics.dart';
