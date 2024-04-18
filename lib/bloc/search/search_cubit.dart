@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../models/related_topics.dart';
 import '../../models/result.dart';
-import '../../repository/i_search_results_repository.dart';
+import '../../repository/i_search_repository.dart';
 
 class SearchCubit extends Cubit<SearchState> {
   final ISearchResultsRepository searchResultsRepository;

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:characters_viewer/models/related_topics.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../dimensions.dart';
 
@@ -81,7 +82,8 @@ class Details extends StatelessWidget {
 
   Widget getDefaultImage() {
     // TODO return Image with placeholder img
-    return Container(
+    return SvgPicture.asset(
+      'assets/svg/default-pic.svg',
       width: 100,
       height: 100,
       color: Colors.blue,

@@ -11,8 +11,9 @@ class SearchBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 60,
+    return Container(
+      color: Colors.white,
+      height: 50,
       child: TextFormField(
         key: const Key('search_field'),
         controller: textEditingController,
